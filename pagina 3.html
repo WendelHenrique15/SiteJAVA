@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página C++</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Página 01</a>
+        <a href="./pagina 2.html">Página 02</a>
+        <a href="./pagina 3.html">Página 03</a>
+        <a href="./pagina 4.html">Página 04</a>
+    </nav>
+    <h1>Código C++</h1>
+    <br>
+    <h2>Descrição da linguagem de programação C++</h2>
+    <p>C++ é uma linguagem de programação e é a mais utilizada pelos desenvolvedores, principalmente no que diz respeito a aplicativos. Ela permite abordar o desenvolvimento sob diversos paradigmas: programação genérica, procedural e orientada a objetos (POO).</p>
+    <br>
+    <br>
+    <h2>print de tela de um código C++ da IDE ARDUÍNO</h2>
+    <div>
+        <img src="CodARDUINO.jpg" alt="print de tela do codigo arduino">
+        <br>
+        <small>Fonte: Arduino IDE</small>
+    </div>
+    <br>
+    <h2> Colocar um exemplo de código C++ da IDE ARDUÍNO (texto)</h2>
+    <p>// C++ code
+        <br>
+        <br>
+        int potenciometro2 = 0;
+        <br>
+        int potenciometr1 = 0;
+        <br>
+        int res = 0;
+        <br>
+        void setup()
+        <br>
+        <br>
+        {
+            <br>
+          pinMode(12, OUTPUT);
+          <br>
+          pinMode(A0, INPUT);
+          <br>
+          Serial.begin(9600);
+          <br>
+          pinMode(A1, INPUT);
+          <br>
+          potenciometr1 = 0;
+          <br>
+          potenciometro2 = 0;
+          <br>
+          res = 0;
+          <br>
+          digitalWrite(12, HIGH);
+          <br>
+        }
+        <br>
+        <br>
+        void loop()
+        <br>
+        <br>
+        {
+          potenciometr1 += analogRead(A0);
+          <br>
+          Serial.println("pot 1 --------------------");
+          <br>
+          Serial.println(potenciometr1);
+          <br>
+          potenciometr1 += analogRead(A1);
+          <br>
+          Serial.println("pot 2 --------------------");
+          <br>
+          Serial.println(potenciometro2);
+          <br>
+          if (potenciometro1 > potenciometro2) {
+            <br>
+            res += (potenciometr1 + potenciometro2);
+            <br>
+            Serial.println("res --------------------");
+            <br>
+            Serial.println("hello world");
+            <br>
+          } else {
+            <br>
+            digitalWrite(12, LOW);
+            <br>
+            <br>
+          }
+          delay(1); // Wait for 1 millisecond(s)
+        }</p>
+    
+</body>
+</html>
